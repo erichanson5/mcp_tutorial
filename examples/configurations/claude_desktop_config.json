@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "basic-server": {
+      "command": "python",
+      "args": ["-m", "src.basic_server"],
+      "cwd": "/path/to/mcp_tutorial"
+    },
+    "task-manager": {
+      "command": "python",
+      "args": ["-m", "src.task_manager"],
+      "cwd": "/path/to/mcp_tutorial"
+    },
+    "weather-service": {
+      "command": "python",
+      "args": ["-m", "src.weather_service"],
+      "cwd": "/path/to/mcp_tutorial",
+      "env": {
+        "OPENWEATHER_API_KEY": "your_api_key_here"
+      }
+    },
+    "file-operations": {
+      "command": "python",
+      "args": ["-m", "src.file_operations"],
+      "cwd": "/path/to/mcp_tutorial"
+    }
+  }
+}
